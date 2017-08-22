@@ -1,2 +1,2 @@
 # awkwardAnimals
-awkward animals on the loose 🐕🐈🐧🐼
+awkward animals on the loose 🐶🐱🐧🐼
