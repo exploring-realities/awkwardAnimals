@@ -10,7 +10,7 @@ public class Fitbox : MonoBehaviour
     public bool MoveCollectionOnDismiss = false;
 
     [Tooltip("The material used to render the Fitbox border.")]
-    public Material FitboxMaterial;
+        public Material FitboxMaterial;
 
     // The offset from the Camera to the HologramCollection when
     // the app starts up. This is used to place the Collection
@@ -42,9 +42,9 @@ public class Fitbox : MonoBehaviour
         // Set up our GestureRecognizer to listen for the SelectEvent
         recognizer = new GestureRecognizer();
         recognizer.TappedEvent += (source, tapCount, ray) =>
-        {
-            DismissFitbox();
-        };
+    {
+        DismissFitbox();
+    };
         recognizer.StartCapturingGestures();
 #endif
     }

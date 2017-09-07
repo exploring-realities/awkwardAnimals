@@ -10,7 +10,7 @@ public class AnimationSpeed : MonoBehaviour
     {
         foreach (AnimationState state in this.gameObject.GetComponent<Animation>())
         {
-            state.speed = speed;
+                    state.speed = speed;
         }
     }
 }

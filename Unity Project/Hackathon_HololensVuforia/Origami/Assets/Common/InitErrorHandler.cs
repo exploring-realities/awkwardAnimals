@@ -141,8 +141,6 @@ public class InitErrorHandler : MonoBehaviour
         }
     }
     #endregion //PRIVATE_METHODS
-
-
     #region PUBLIC_METHODS
     public void OnErrorDialogClose()
     {

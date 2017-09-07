@@ -141,7 +141,7 @@ PlayerSettings:
   targetPixelDensity: 0
   resolutionScalingMode: 0
   applicationIdentifier:
-    Android: com.Company.ProductName
+    Android: com.hack.athon
     Standalone: unity.Holographic Academy.Origami
     Tizen: com.Company.ProductName
     iOS: com.Company.ProductName
@@ -437,6 +437,9 @@ PlayerSettings:
   switchUdpSendBufferSize: 9
   switchUdpReceiveBufferSize: 42
   switchSocketBufferEfficiency: 4
+  switchSocketInitializeEnabled: 1
+  switchNetworkInterfaceManagerInitializeEnabled: 1
+  switchPlayerConnectionEnabled: 1
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -585,7 +588,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: Holographic Academy
   metroCertificateIssuer: Holographic Academy
-  metroCertificateNotAfter: 008828b26c46d401
+  metroCertificateNotAfter: 80d69b3cc346d401
   metroApplicationDescription: XRHackathon
   wsaImages:
     65636: 
@@ -611,7 +614,7 @@ PlayerSettings:
       EnterpriseAuthentication: False
       HumanInterfaceDevice: False
       InputInjectionBrokered: False
-      InternetClient: True
+      InternetClient: False
       InternetClientServer: False
       Location: False
       Microphone: True
