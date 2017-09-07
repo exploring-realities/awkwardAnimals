@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AWZ9jAr/////AAAAGYmFjReAvkMBpXk6IMs7vr9ZUATMPpKnpZKOvuHBt6TseCe6ZnXBh6GWDBEdg9o9AmHonxZuBeECZ7GIL1KddXTDlbkBHUBFqoeS6Ii+Ut/dsxaifV2cSU6avTYiyZ6h0nHmiX5FHEiumyclHULXbME0QXBnMj7sSgA8Tq2XUuk+x9zHiblDTrNdLpfEqes/NprluJMr3XxHcunf4W13K5S4cHKHR2nid4TiSCTJI8U7mQVxvxbBLH0U8Qoa62ZHWjDeq6zhR/6H85w52dpQvjxHa7feo+9w/b5xSEjkwX77MENxQeo0XEToGXx/Er0HFBpv8/5gH0UFhsVBKmNx2Xmwqo98A6SsMOcCJR64Qdgl
+    vuforiaLicenseKey: AU9M2vz/////AAAAGTTBzuYPmUUFlPPpdaZ+ws84ZshSQ38rUx5h7m6oL/IW59MBFRwEx5qfdWZgf4AUWZ8U2R+sDsskChc86D5o6kA6CP3w3SuS/842R3e8l8VjaXXd20PkGzPXhi5JQ+8n/XryzyVPtiw31RXZe3TJ9nij2d+2EJwCASpb9x4lSls4oCvDWX46mTi0V5Mqqat1YZLucXwllueSauP+e6kLqbf6A/isJ4gfZ52xKES5QuF0oSWvVSmc6gGKUnS1LdT7WorDzUkYgp3EU87JXbeXIwRxhW97/C3pfS1lObgVpR878B/YQKaCeElloW2djJAkxPcL7FYKVGGEcC7P5AooXqgzWanDDu26Milw+NzKJh6q
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
-    maxSimultaneousObjectTargets: 1
+    maxSimultaneousImageTargets: 5
+    maxSimultaneousObjectTargets: 5
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -44,10 +44,12 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - samples
     - hackathon_device
     - StonesAndChips
     dataSetsToActivate:
     - hackathon_device
+    - samples
     - StonesAndChips
   videoBackground:
     clippingMode: 0
