@@ -486,6 +486,14 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 4328001454573694, guid: 77bd4786c312edc43a13e84052b3b673, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328001454573694, guid: 77bd4786c312edc43a13e84052b3b673, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77bd4786c312edc43a13e84052b3b673, type: 2}
   m_IsPrefabParent: 0
@@ -1100,6 +1108,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb61546cff3beb4438704d3eadf7b96d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1172721627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1172721629}
+  - component: {fileID: 1172721628}
+  m_Layer: 0
+  m_Name: StateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1172721628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172721627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9232a25e8778ef64ba7de41f4b4f4aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  arrowToBeChanged: 0
+--- !u!4 &1172721629
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172721627}
+  m_LocalRotation: {x: -0.016465995, y: -0.01044708, z: 0.0006264962, w: 0.9998097}
+  m_LocalPosition: {x: -3.33, y: 2, z: 2.7416844}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -1.886, y: -1.199, z: 0.09200001}
 --- !u!4 &1304160005 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4328001454573694, guid: 77bd4786c312edc43a13e84052b3b673,
@@ -1220,6 +1270,7 @@ GameObject:
   - component: {fileID: 1373804507}
   - component: {fileID: 1373804506}
   - component: {fileID: 1373804505}
+  - component: {fileID: 1373804512}
   m_Layer: 0
   m_Name: ImageTarget-left
   m_TagString: Untagged
@@ -1246,7 +1297,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373804504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
@@ -1287,7 +1338,7 @@ MonoBehaviour:
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/samples.xml
-  mExtendedTracking: 0
+  mExtendedTracking: 1
   mInitializeSmartTerrain: 0
   mReconstructionToInitialize: {fileID: 0}
   mSmartTerrainOccluderBoundsMin: {x: 0, y: 0, z: 0}
@@ -1348,6 +1399,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1373804512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373804504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e1325c9f160744c81edcf80c79a9c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!21 &1455180266
 Material:
   serializedVersion: 6
