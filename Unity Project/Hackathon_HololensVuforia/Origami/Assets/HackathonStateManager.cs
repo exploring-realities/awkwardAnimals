@@ -26,7 +26,7 @@ public class HackathonStateManager : MonoBehaviour
     {
     }
 
-    void SwitchState()
+   public void SwitchState()
     {
         if (currentState.Equals(State.Normal))
         {
