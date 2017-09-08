@@ -133,8 +133,8 @@ namespace Vuforia
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             foreach (Renderer component in rendererComponents)
             {
-                component.transform.localRotation = Quaternion.Slerp(component.transform.localRotation, targetRotation, Time.deltaTime * 2.0F);
-                component.transform.localPosition = Vector3.Slerp(component.transform.localPosition, targetPosition, Time.deltaTime * 2.0F);
+                component.transform.localRotation = Quaternion.Lerp(component.transform.localRotation, targetRotation, Time.deltaTime * 2.0F);
+                component.transform.localPosition = Vector3.Lerp(component.transform.localPosition, targetPosition, Time.deltaTime * 2.0F);
             }
         }
     }
